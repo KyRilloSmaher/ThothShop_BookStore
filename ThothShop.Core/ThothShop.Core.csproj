@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.12">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.12" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThothShop.Domain\ThothShop.Domain.csproj" />
+    <ProjectReference Include="..\ThothShop.Infrastructure\ThothShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\ThothShop.Service\ThothShop.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Authentications\Commands\Responses\" />
+    <Folder Include="Features\Authentications\Queries\Responses\" />
+    <Folder Include="Features\Authors\Commands\Responses\" />
+    <Folder Include="Features\Books\Commands\Responses\" />
+    <Folder Include="Features\Authrizations\" />
+    <Folder Include="Features\Categories\Commands\Responses\" />
+    <Folder Include="Features\Payments\Commands\Response\" />
+    <Folder Include="Features\Payments\Queries\Handlers\" />
+    <Folder Include="Features\Payments\Queries\Models\" />
+    <Folder Include="Features\Payments\Queries\Response\" />
+    <Folder Include="Features\UsedBooks\Commands\Responses\" />
+    <Folder Include="Features\Users\Commands\Responses\" />
+    <Folder Include="Mapping\Carts\CartCommandsMapping\" />
+    <Folder Include="Validators\Authentications\" />
+    <Folder Include="Validators\Authrizations\" />
+    <Folder Include="Validators\Books\" />
+    <Folder Include="Validators\Carts\" />
+    <Folder Include="Validators\Orders\" />
+    <Folder Include="Validators\Users\" />
+  </ItemGroup>
+
+</Project>
